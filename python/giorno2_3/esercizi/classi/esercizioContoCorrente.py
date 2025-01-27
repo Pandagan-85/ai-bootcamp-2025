@@ -8,7 +8,7 @@ class Account:
     def withdraw(self, num): # Prendo dindini dal conto
         self.balance -=num
         if self.balance <= 0:
-            print(f"InsufficientFundsError")
+            raise Exception("InsufficientFundsError")
 
 
 account = Account(name="Rigel")

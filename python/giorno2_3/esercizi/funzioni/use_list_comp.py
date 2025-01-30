@@ -1,4 +1,3 @@
-
 # Studio delle list comprehension
 """
 Una list comprehension** in Python

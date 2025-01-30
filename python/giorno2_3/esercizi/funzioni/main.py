@@ -39,9 +39,12 @@ def count_words(words):
     """
     return the count of words of the given sentence
     """
-    return len(words.split(" "))
-
-print("count_words: ", count_words("ciao ciao ciao"))
+    # return len(words.split(" "))
+    # per evitare bug, ad esempio creati da un doppio spazio
+    # è meglio usare split senza passare argomento
+    # oppure usarlo concatenato con strip .strip().split(" ")
+    return len(words.split())
+print("count_words: ", count_words("ciao ciao ciao    "))
 
 def reverse_string(quote):
     """
@@ -93,12 +96,12 @@ def find_max(seq):
     """
     Return the largest number in the list
     """
-    a = 0
+    a = seq[0]
     for n in seq:
         if n > a:
             a = n
     return a
-print("find_max: ",find_max([1,5,6,7,134]))
+print("find_max: ",find_max([-10,1,5,6,7,134]))
 
 def count_vowels(quote):
     """

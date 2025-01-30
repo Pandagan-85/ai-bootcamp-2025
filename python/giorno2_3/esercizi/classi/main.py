@@ -27,7 +27,7 @@ class Region:
         self.cities = []
 
     def add(self, city):
-        return self.cities.append(city)
+        self.cities.append(city)
 
     @property
     def pop(self):

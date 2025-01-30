@@ -7,23 +7,27 @@ head_node = Node("Napoli")
 assert head_node.next is None
 
 head_node.next = Node("Rome")
+# Napoli → Rome → None
 head_node.next.next = Node("Milan")
+# Napoli → Rome → Milan → None
 
 # Part 2 - tests for the linked list
 
 my_list = LinkedList()
+# LinkedList: head → None
 
 assert len(my_list) == 0
 assert my_list.head is None
 
 my_list.add_node(data="Napoli")
-
+# LinkedList: head → [Napoli] → None
 
 assert len(my_list) == 1
 assert my_list.head.data == "Napoli"
 
 
 my_list.add_node(data="Milan")
+# LinkedList: head → [Napoli] → [Milan] → None
 
 assert len(my_list) == 2
 

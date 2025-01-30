@@ -16,5 +16,3 @@ assert [el.phone for el in directory.query(name="Vedrai")] == ["+39-333-333333"]
 assert [el.phone for el in directory.query(name="Margaret")] == ["01-234-567"]
 assert [el.phone for el in directory.find("Hamilton")] == ["01-234-567", None]
 assert [el.name for el in directory.find("333")] == ["Vedrai"]
-
-

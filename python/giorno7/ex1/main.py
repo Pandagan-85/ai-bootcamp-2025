@@ -45,7 +45,7 @@ def main():
 
                         keep_playing = input("Keep playing? y/n? ")
                         if keep_playing.lower() == "y":
-                            break  # Ricomincia con un nuovo numero
+                            continue  # Ricomincia con un nuovo numero
                         else:
                             chart.print_ranking()  # Stampa la classifica alla fine
                             print("See yaaaa 👋")

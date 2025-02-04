@@ -41,7 +41,7 @@ class Chart:
         print("\n🏆 CLASSIFICA FINALE 🏆")
         sorted_players = self.sort_players()
         for i, player in enumerate(sorted_players, 1):
-            print(f"{i}. {player.name}: {player.p_attempts} tentativi, {player.time_elapsed} secondi")
+            print(f"{i}. {player.name}: {player.p_attempts} tentativi, {player.time_elapsed} secondi | ottenuto il {player.date}")
         print()
 
     def save_scores(self):

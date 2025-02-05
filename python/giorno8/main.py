@@ -4,7 +4,7 @@ from random import randint
 import os
 
 # Crea una connessione al database (o lo apre se esiste già)
-conn = sqlite3.connect('students.db')
+conn = sqlite3.connect('school.db')
 cur = conn.cursor()
 
 # Crea una cartella "splitted_csv" se non esiste
@@ -44,10 +44,7 @@ conn.commit()
 
 ## Creo secondo DB
 
-conn2 = sqlite3.connect('assignments.db')
-cur2 = conn2.cursor()
-
-cur2.execute('''
+cur.execute('''
     CREATE TABLE IF NOT EXISTS assignments (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     student_id INTEGER,
@@ -55,7 +52,7 @@ cur2.execute('''
     FOREIGN KEY (student_id) REFERENCES studenti(id) ON DELETE CASCADE
     )
     ''')
-conn2.commit()
+conn.commit()
 
 # Selezionare gli studenti dal database principale (studenti)
 cur.execute('''SELECT id, assignments FROM studenti''')
@@ -84,13 +81,13 @@ for student in students:
         delivery_date = (datetime.now() + timedelta(days=randint(1, 30))).strftime('%Y-%m-%d')
 
         # Inserisci la data nel database assignments
-        cur2.execute('''
+        cur.execute('''
             INSERT INTO assignments (student_id, delivery_date)
             VALUES (?, ?)
         ''', (student_id, delivery_date))
 
 # Commit delle modifiche al database assignments
-conn2.commit()
+conn.commit()
 print(f"Totale assignments inseriti: {total_assignments}")
 
 print('---')
@@ -110,8 +107,8 @@ with open('splitted_csv/students_without_assignments.csv', 'w', newline='') as f
 
 ## Estrai gli assignment (id studente e data di consegna)
 
-cur2.execute('''SELECT id, student_id, delivery_date FROM assignments''')
-assignments = cur2.fetchall()
+cur.execute('''SELECT id, student_id, delivery_date FROM assignments''')
+assignments = cur.fetchall()
 
 # Crea il secondo CSV con l'ID del compito incluso
 with open('splitted_csv/assignments.csv', 'w', newline='') as file:
@@ -168,7 +165,9 @@ totale = cur.fetchone()
 print(f"Assignment totali-{totale}")
 print('---')
 
-
+# controllo record per visualizzazione di riga vuota
+cur.execute('''SELECT COUNT(*) FROM studenti''')
+total = cur.fetchone()  # Usa fetchone() per ottenere una singola tupla
+print(f"Totale studenti: {total[0]}")
 
 cur.close()
-cur2.close()

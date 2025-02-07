@@ -41,7 +41,6 @@ with open("students.csv") as st:
 
 conn.commit()
 
-
 ## Creo secondo DB
 
 cur.execute('''

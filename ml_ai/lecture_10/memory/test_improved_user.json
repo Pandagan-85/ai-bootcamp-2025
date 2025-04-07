@@ -1,0 +1,76 @@
+{
+  "user_preferences": {
+    "dietary_restrictions": [
+      "vegetarian"
+    ],
+    "allergies": [
+      "nuts"
+    ],
+    "favorite_cuisines": [
+      "Mexican"
+    ],
+    "cooking_skill_level": "intermediate"
+  },
+  "conversation_highlights": [
+    {
+      "timestamp": "2025-04-07T21:13:11.374363",
+      "content": "User is a vegetarian and has a nut allergy."
+    },
+    {
+      "timestamp": "2025-04-07T21:13:22.741458",
+      "content": "User is vegetarian, has a nut allergy, loves Mexican cuisine, and is an intermediate cook."
+    },
+    {
+      "timestamp": "2025-04-07T21:14:27.926400",
+      "content": "User is a vegetarian and has a nut allergy."
+    },
+    {
+      "timestamp": "2025-04-07T21:14:44.970013",
+      "content": "User is vegetarian and has an intermediate cooking skill level."
+    },
+    {
+      "timestamp": "2025-04-07T21:14:52.959489",
+      "content": "User is vegetarian and has a nut allergy. They enjoy Mexican cuisine and have an intermediate cooking skill level."
+    },
+    {
+      "timestamp": "2025-04-07T21:15:05.143418",
+      "content": "User is unsure how to make enchiladas and has an intermediate cooking skill level."
+    },
+    {
+      "timestamp": "2025-04-07T21:30:25.557187",
+      "content": "User is a vegetarian with a nut allergy and an intermediate cooking skill level."
+    },
+    {
+      "timestamp": "2025-04-07T21:30:37.911479",
+      "content": "User is vegetarian and has a nut allergy."
+    },
+    {
+      "timestamp": "2025-04-07T21:30:49.174097",
+      "content": "User is vegetarian and has a favorite cuisine of Mexican. Their cooking skill level is intermediate. No other significant information was shared."
+    },
+    {
+      "timestamp": "2025-04-07T21:30:56.544466",
+      "content": "User has an intermediate cooking skill level and enjoys Mexican cuisine. No significant information was shared in this interaction."
+    },
+    {
+      "timestamp": "2025-04-07T21:33:43.974448",
+      "content": "User is vegetarian and has a nut allergy."
+    },
+    {
+      "timestamp": "2025-04-07T21:33:56.671260",
+      "content": "User is vegetarian and has a preference for Mexican cuisine. They have an intermediate cooking skill level."
+    },
+    {
+      "timestamp": "2025-04-07T21:34:06.701108",
+      "content": "User is vegetarian and has a favorite cuisine of Mexican. Their cooking skill level is intermediate. No other significant information was shared."
+    },
+    {
+      "timestamp": "2025-04-07T21:34:14.796255",
+      "content": "User is vegetarian."
+    }
+  ],
+  "last_session": {
+    "timestamp": "2025-04-07T21:34:14.797565",
+    "last_message": "I don't understand how to make enchiladas"
+  }
+}

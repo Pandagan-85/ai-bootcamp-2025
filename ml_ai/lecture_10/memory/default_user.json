@@ -1,0 +1,18 @@
+{
+  "user_preferences": {
+    "dietary_restrictions": [],
+    "allergies": [],
+    "disliked_ingredients": [],
+    "favorite_cuisines": [
+      "Mexican"
+    ],
+    "cooking_skill_level": "",
+    "protein_preference": "high"
+  },
+  "conversation_highlights": [],
+  "last_session": {
+    "timestamp": "2025-04-07T18:09:42.133287",
+    "last_message": "Give the complete recipe for the second recipe",
+    "ended_at": "2025-04-07T18:14:58.699771"
+  }
+}

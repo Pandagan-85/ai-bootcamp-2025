@@ -1,0 +1,37 @@
+{
+  "user_preferences": {
+    "Dietary restrictions": [
+      "vegetarian"
+    ],
+    "Allergies": [],
+    "Disliked ingredients": [],
+    "Favorite cuisines": [],
+    "Cooking skill level": ""
+  },
+  "conversation_highlights": [
+    {
+      "timestamp": "2025-04-07T21:35:19.105807",
+      "content": "None."
+    },
+    {
+      "timestamp": "2025-04-07T21:35:26.891530",
+      "content": "None."
+    },
+    {
+      "timestamp": "2025-04-07T21:35:33.645532",
+      "content": "User is vegetarian."
+    },
+    {
+      "timestamp": "2025-04-07T21:35:43.477369",
+      "content": "User is vegetarian."
+    },
+    {
+      "timestamp": "2025-04-07T21:35:50.441699",
+      "content": "None."
+    }
+  ],
+  "last_session": {
+    "timestamp": "2025-04-07T21:35:50.442827",
+    "last_message": "What's the difference between baking and roasting?"
+  }
+}

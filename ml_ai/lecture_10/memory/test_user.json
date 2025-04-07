@@ -1,0 +1,23 @@
+{
+  "user_preferences": {
+    "Dietary restrictions": [
+      "vegetarian"
+    ],
+    "Favorite cuisines": [
+      "Italian"
+    ],
+    "Allergies": [
+      "nuts"
+    ]
+  },
+  "conversation_highlights": [
+    {
+      "timestamp": "2025-04-07T18:07:24.277398",
+      "content": "User is vegetarian and loves Italian food"
+    }
+  ],
+  "last_session": {
+    "timestamp": "2025-04-07T18:07:28.754323",
+    "last_message": "I also can't eat nuts due to allergies"
+  }
+}
